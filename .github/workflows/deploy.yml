@@ -46,13 +46,13 @@ jobs:
         git config user.name "GitHub Actions"
         
         # Add the separate deploy repository as the remote
-        git remote add deploy https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Defra-Data-Science-Centre-of-Excellence/DASH-Front-Door-DEPLOY.git
+        git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/tomkdefra/DASH-Front-Door-DEPLOY.git
         
         # Add and commit changes
         git add .
         git commit -m "Deploy built site to DASH-Front-Door-DEPLOY after PR merge from dev to main"
         
         # Push to the deploy repository
-        git push --force deploy main  # Push to the main branch of the separate repository
+        git push --force origin main  # Push to the main branch of the separate repository
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
