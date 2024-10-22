@@ -51,7 +51,7 @@ jobs:
         # Add and commit changes
         git add .
         git commit -m "Deploy built site to DASH-Front-Door-DEPLOY after PR merge from dev to main" || echo "No changes to commit"
-
+       
         # Push to the deploy repository, forcing the update to the main branch
         git push --force deploy main
       env:
