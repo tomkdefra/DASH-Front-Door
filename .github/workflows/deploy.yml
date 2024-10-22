@@ -1,0 +1,58 @@
+name: Deploy Jekyll Site to separate repository
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed  # Trigger when the PR is merged or closed
+
+jobs:
+  build-and-deploy:
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'dev'
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the main branch (where the PR has been merged)
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        ref: main
+
+    # Step 2: Set up Ruby environment for Jekyll
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.3.5'
+
+    # Step 3: Install Jekyll and Bundler
+    - name: Install Jekyll and Bundler
+      run: |
+        gem install jekyll bundler
+        bundle install
+
+    # Step 4: Build the Jekyll site
+    - name: Build Jekyll site
+      run: bundle exec jekyll build  # Full build
+
+    # Step 5: Push the static site to the separate deploy repository
+    - name: Push to separate deploy repository
+      run: |
+        # Change to the _site directory (where the static files are)
+        cd _site
+        
+        # Configure Git user details for this repository (local, not global)
+        git config user.email "actions@github.com"
+        git config user.name "GitHub Actions"
+        
+        # Add the separate deploy repository as the remote
+        git remote add deploy https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/Defra-Data-Science-Centre-of-Excellence/DASH-Front-Door-DEPLOY.git
+        
+        # Add and commit changes
+        git add .
+        git commit -m "Deploy built site to DASH-Front-Door-DEPLOY after PR merge from dev to main"
+        
+        # Push to the deploy repository
+        git push --force deploy main  # Push to the main branch of the separate repository
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

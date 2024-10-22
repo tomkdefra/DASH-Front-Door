@@ -1,0 +1,347 @@
+main:
+  - title: "About DASH"
+    url: /about/
+  - title: "Project showcase"
+    url: /showcase/  
+  - title: "Set up"
+    url: /set-up/
+  - title: "Playbook"
+    url: /playbook/
+  - title: "Learning & Development"
+    url: /learning-and-development/
+
+set-up:
+  - title: Data science tools and environment set up
+    children:
+      - title: "Overview"
+        url: /set-up/overview/
+  - title: Version control and collaboration
+    children:
+      - title: "Version control with Git"
+        url: /set-up/git/
+      - title: "GitHub: Back-up, collaboration, and more!"
+        url: /set-up/github/
+      - title: "Git Configuration"
+        url: /set-up/git-config/
+      - title: "Git on RStudio"
+        url: /set-up/git-on-rstudio/
+      - title: "Git on Databricks"
+        url: /set-up/git-on-databricks/
+      - title: "The 5 Essential Git Commands That Will Change Your Life"
+        url: /set-up/git-5-commands/
+      - title: "Glossary"
+        url: /set-up/git-glossary/
+      - title: "'Git 101' training sessions"
+        url: /set-up/git-training/
+
+playbook:
+  - title: Platform playbook
+    children:
+      - title: "Introduction"
+        url: /playbook/introduction/
+  - title: Platform Components
+    children:
+      - title: "Computing Resources"
+        url: /playbook/compute/
+      - title: "Data"
+        url: /playbook/data/
+      - title: "Unity Catalog"
+        url: /playbook/unitycatalog/
+  - title: Tools
+    children:
+      - title: "Databricks"
+        url: /playbook/empty/
+      - title: "RStudio"
+        url: /playbook/empty/
+      - title: "Posit Connect Server"
+        url: /playbook/empty/
+      - title: "Azure Virtual Desktop"
+        url: /playbook/empty/
+      - title: "GitHub"
+        url: /playbook/empty/
+      - title: "Azure Machine Learning"
+        url: /playbook/empty/
+  - title: Support
+    children:
+      - title: "Support"
+        url: /playbook/empty/
+      - title: "Training and Events"
+        url: /playbook/empty/
+      - title: "Feature Requests"
+        url: /playbook/empty/
+      - title: "Accelerator Service"
+        url: /playbook/empty/
+  - title: Appendix
+    children:
+      - title: "References"
+        url: /playbook/empty/
+      - title: "Glossary"
+        url: /playbook/empty/
+
+geo-python:
+  - title: Course information
+    children:
+      - title: "Learning goals"
+        url: /learning-and-development/pathways/geo-python/course-info/learning-goals/
+      - title: "Use of AI tools"
+        url: /learning-and-development/pathways/geo-python/course-info/ai-tools/
+      - title: "License and using these materials"
+        url: /learning-and-development/pathways/geo-python/course-info/licensing/
+      - title: "Glossary"
+        url: /learning-and-development/pathways/geo-python/course-info/glossary/
+      - title: "Useful Resources"
+        url: /learning-and-development/pathways/geo-python/course-info/resources/
+      - title: "The Geo-Python team"
+        url: /learning-and-development/pathways/geo-python/course-info/theteam/
+  - title: Lesson 1
+    children:
+      - title: "Motivation for the course"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-1/motivation/
+      - title: "Lesson overview"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-1/overview/
+      - title: "Course environment"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-1/course-environment/
+      - title: "GitHub discussions"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-1/github-discussions/
+      - title: "Course notebooks"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-1/course-notebooks/
+      - title: "A taste of Python"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-1/a-taste-of-python/
+      - title: "GCP 1 - Selecting 'good' variable names"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-1/gcp-1-selecting-good-variable-names/
+      - title: "Exercise 1"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-1/exercise-1/
+  - title: Lesson 2
+    children:
+      - title: "Lesson overview"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-2/overview/
+      - title: "Basic elements of Python"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-2/basic-elements-of-python/
+      - title: "Introduction to Version Control"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-2/intro-to-github/
+      - title: "Meet Git"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-2/meet-git/
+      - title: "Using Classroom for Github"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-2/github-classroom/
+      - title: "GCP 2 - Describing your code"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-2/gcp-2-describing-your-code/
+      - title: "Why are we working in pairs?"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-2/why-are-we-working-in-pairs/
+      - title: "Exercise 2"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-2/exercise-2/
+  - title: Lesson 3
+    children:
+      - title: "Lesson overview"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-3/overview/
+      - title: "for loops"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-3/for-loops/
+      - title: "Conditional statements"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-3/conditional-statements/
+      - title: "GCP 3 - Writing readable code"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-3/gcp-3-writing-readable-code/
+      - title: "Exercise 3"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-3/exercise-3/
+  - title: Lesson 4
+    children:
+      - title: "Lesson overview"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-4/overview/
+      - title: "Functions"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-4/functions/
+      - title: "AI and programming in Python"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-4/ai-and-programming-in-python/
+      - title: "Using script files"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-4/using-script-files/
+      - title: "Loading and using modules"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-4/loading-and-using-modules/
+      - title: "GCP 4 - Writing our scripts the 'right' way"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-4/gcp-4-writing-our-scripts-the-right-way/
+      - title: "Exercise 4"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-4/exercise-4/
+  - title: Lesson 5
+    children:
+      - title: "Lesson overview"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-5/overview/
+      - title: "What is pandas?"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-5/what-is-pandas/
+      - title: "Exploring data using pandas"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-5/exploring-data-using-pandas/
+      - title: "Processing data with pandas"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-5/processing-data-with-pandas/
+      - title: "Exercise 5"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-5/exercise-5/
+  - title: Lesson 6
+    children:
+      - title: "Lesson overview"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-6/overview/
+      - title: "Processing data with pandas II"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-6/processing-data-with-pandas-ii/
+      - title: "Dealing with errors"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-6/dealing-with-errors/
+      - title: "GCP 5 - Using assertions"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-6/gcp-5-using-assertions/
+      - title: "Debugging your Python code"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-6/debugging-your-python-code/
+      - title: "Exercise 6"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-6/exercise-6/
+  - title: Lesson 7
+    children:
+      - title: "Lesson overview"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-7/overview/
+      - title: "Plotting in Python"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-7/plotting-in-python/
+      - title: "Anatomy of a plot"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-7/anatomy-of-a-plot/
+      - title: "Basic plotting with pandas and Matplotlib"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-7/basic-plotting-with-pandas-and-matplotlib/
+      - title: "More advanced plotting with pandas/Matplotlib"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-7/more-advanced-plotting-with-pandas-matplotlib/
+      - title: "Exercise 7"
+        url: /learning-and-development/pathways/geo-python/lessons/lesson-7/exercise-7/
+  - title: Final exercise
+    children:
+      - title: "Final exercise assignment"
+        url: /learning-and-development/pathways/geo-python/final-exercise/final-exercise-assignment/
+      - title: "Grading"
+        url: /learning-and-development/pathways/geo-python/final-exercise/grading/
+  - title: Resources
+    children:
+      - title: "Glossary"
+        url: /learning-and-development/pathways/geo-python/resources/glossary/
+      - title: "Installing Python"
+        url: /learning-and-development/pathways/geo-python/resources/installing-python/
+      - title: "Useful books and sites"
+        url: /learning-and-development/pathways/geo-python/resources/useful-books-and-sites/
+
+auto-gis:
+  - title: Course information
+    children:
+      - title: "General information"
+        url: /learning-and-development/pathways/auto-gis/course-info/general-information/
+      - title: "Course environment"
+        url: /learning-and-development/pathways/auto-gis/course-info/course-environment/
+      - title: "Grading"
+        url: /learning-and-development/pathways/auto-gis/course-info/grading/
+      - title: "Learning goals"
+        url: /learning-and-development/pathways/auto-gis/course-info/learning-goals/
+      - title: "Installing Python and Python packages"
+        url: /learning-and-development/pathways/auto-gis/course-info/installing-python-packages/
+      - title: "Create a Python GIS environment"
+        url: /learning-and-development/pathways/auto-gis/course-info/create-python-gis-environment/
+      - title: "Use of AI tools"
+        url: /learning-and-development/pathways/auto-gis/course-info/use-of-ai-tools/
+      - title: "Resources"
+        url: /learning-and-development/pathways/auto-gis/course-info/resources/
+      - title: "License and Terms of Use"
+        url: /learning-and-development/pathways/auto-gis/course-info/license-terms/
+  - title: Lesson 1
+    children:
+      - title: "Overview"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-1/overview/
+      - title: "Motivation behind this course"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-1/motivation/
+      - title: "Shapely and geometry objects"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-1/shapely-geometry-objects/
+      - title: "Exercise 1"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-1/exercise-1/
+  - title: Lesson 2
+    children:
+      - title: "Overview"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-2/overview/
+      - title: "Key concepts"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-2/key-concepts/
+      - title: "Managing file paths"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-2/managing-file-paths/
+      - title: "Vector Data I/O"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-2/vector-data-io/
+      - title: "Geopandas: an introduction"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-2/geopandas-introduction/
+      - title: "Map projections"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-2/map-projections/
+      - title: "Exercise 2"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-2/exercise-2/
+  - title: Lesson 3
+    children:
+      - title: "Overview"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-3/overview/
+      - title: "Geocoding"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-3/geocoding/
+      - title: "Geocoding in geopandas"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-3/geocoding-in-geopandas/
+      - title: "Point-in-polygon queries"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-3/point-in-polygon-queries/
+      - title: "Intersect"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-3/intersect/
+      - title: "Spatial join"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-3/spatial-join/
+      - title: "Exercise 3"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-3/exercise-3/
+  - title: Lesson 4
+    children:
+      - title: "Overview"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-4/overview/
+      - title: "Overlay analysis"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-4/overlay-analysis/
+      - title: "Aggregating data"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-4/aggregating-data/
+      - title: "Simplifying geometries"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-4/simplifying-geometries/
+      - title: "Reclassifying data"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-4/reclassifying-data/
+      - title: "Exercise 4"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-4/exercise-4/
+  - title: Lesson 5
+    children:
+      - title: "Overview"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-5/overview/
+      - title: "Static maps"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-5/static-maps/
+      - title: "Interactive maps"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-5/interactive-maps/
+      - title: "Exercise 5"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-5/exercise-5/
+  - title: Lesson 6
+    children:
+      - title: "Overview"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-6/overview/
+      - title: "Retrieving data from OpenStreetMap"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-6/retrieving-data-openstreetmap/
+      - title: "Network analysis in Python"
+        url: /learning-and-development/pathways/auto-gis/lessons/lesson-6/network-analysis-python/
+  - title: Final Assignment
+    children:
+      - title: "Final assignment"
+        url: /learning-and-development/pathways/auto-gis/final-assignment/final-assignment/
+      - title: "Grading criteria for the final assignment"
+        url: /learning-and-development/pathways/auto-gis/final-assignment/grading-criteria/
+      - title: "Final Assignment hints"
+        url: /learning-and-development/pathways/auto-gis/final-assignment/hints/
+      - title: "Theme by the Executable Book Project"
+        url: /learning-and-development/pathways/auto-gis/final-assignment/theme/
+
+reproducible-analytical-pipelines:
+  - title: "Building Reproducible Analytical Pipelines"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/
+  - title: "Intro R"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/intro-r/
+  - title: "Functional Programming"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/functional-programming/
+  - title: "Git"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/git/
+  - title: "Package Development"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/package-dev/
+  - title: "Unit Tests"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/unit-tests/
+  - title: "Targets"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/targets/
+  - title: "Products"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/products/
+  - title: "Docker"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/docker/
+  - title: "GitHub Actions"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/github-actions/
+  - title: "Nix"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/nix/
+  - title: "What Else"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/what-else/
+  - title: "Conclusion"
+    url: /learning-and-development/pathways/reproducible-analytical-pipelines/conclusion/    
