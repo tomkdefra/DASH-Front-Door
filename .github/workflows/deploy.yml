@@ -36,23 +36,23 @@ jobs:
       run: bundle exec jekyll build  # Full build
 
     # Step 5: Push the static site to the separate deploy repository
-    - name: Push to separate deploy repository
+    - name: Deploy Jekyll site to DASH-Front-Door-DEPLOY
       run: |
         # Change to the _site directory (where the static files are)
         cd _site
-        
+
         # Configure Git user details for this repository (local, not global)
         git config user.email "actions@github.com"
         git config user.name "GitHub Actions"
-        
-        # Check if the 'deploy' remote exists; if not, add it
-        git remote | grep deploy || git remote add deploy https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/tomkdefra/DASH-Front-Door-DEPLOY.git
+
+        # Check if the 'deploy' remote exists; if not, add it using HTTPS and your PAT
+        git remote | grep deploy || git remote add deploy https://x-access-token:${{ secrets.DEPLOY_KEY }}@github.com/tomkdefra/DASH-Front-Door-DEPLOY.git
 
         # Add and commit changes
         git add .
         git commit -m "Deploy built site to DASH-Front-Door-DEPLOY after PR merge from dev to main" || echo "No changes to commit"
-       
+
         # Push to the deploy repository, forcing the update to the main branch
         git push --force deploy main
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEPLOY_PAT: ${{ secrets.DEPLOY_KEY }}
