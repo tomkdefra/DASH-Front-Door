@@ -1,0 +1,126 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+locale: "en-GB"
+title: ""
+logo: /assets/images/DASH_small_logo_white.png
+email:
+description: >- # this means to ignore newlines until "baseurl:"
+  This a proof of concept.
+github_username: username
+minimal_mistakes_skin: gov
+search: true
+enable_copy_code_button: true
+
+include:
+  - _pages
+
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Europe/London
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+
+# Collections
+collections:
+  showcase:
+    output: true
+    permalink: /:collection/:path/
+  set-up:
+    output: true
+    permalink: /:collection/:path/
+  playbook:
+    output: true
+    permalink: /:collection/:path/
+  learning-and-development:
+    output: true
+    permalink: /:collection/:path/  
+
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      classes: wide
+  # _showcase
+  - scope:
+      path: "_showcase"
+      type: showcase
+    values:
+      layout: single
+      author_profile: false
+      share: true    
+  # _set-up
+  - scope:
+      path: "_set-up"
+      type: set-up
+    values:
+      layout: single
+      toc_sticky: true
+      sidebar:
+        nav: "set-up"  
+  # _playbook
+  - scope:
+      path: "_playbook"
+      type: playbook
+    values:
+      layout: single
+      toc_sticky: true
+      sidebar:
+        nav: "playbook"  
+  # _learning-and-development
+  - scope:
+      path: "_learning-and-development"
+      type: learning-and-development
+    values:
+      layout: single
+      classes: wide
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
