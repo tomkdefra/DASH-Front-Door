@@ -244,7 +244,7 @@ We also need to have our [user token](https://docs.databricks.com/en/dev-tools/c
 
 ```{python, eval = FALSE, python.reticulate = FALSE}
 # Personal token
-token = "dapi123cd4cab5c6d7c89d01abc23d4567d8" # Not real token
+token = "dapiFAKETOKEN67d8"
 ```
 
 We finally make the call to API asking to [`delete`](https://docs.databricks.com/api/azure/workspace/clusters/delete) the cluster, please note that the `delete` command terminates the Spark cluster with the specified ID, it does not *delete* it from the workspace.
